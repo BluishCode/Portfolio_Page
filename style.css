@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.938);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+
+header {
+    padding: 1rem;
+    background: rgb(0, 0, 0);
+    box-shadow: white;
+}
+
+/* Main */
+
+section {
+    display: flex;
+    grid-template-rows: 3;
+    padding: 1rem;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background: black;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+button {
+    font-size: 50px;
+    border: none;
+    color: white;
+    background: var(--primary);
+}
+
+.btn {
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease;
+    font-size: 50px;
+}
+
+.btn:hover {
+    color: yellow;
+    animation: spin 2s linear infinite;
+}
+
+input {
+    border: thin solid white;
+    border-radius: 10px;
+    color: white;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+    padding: 1rem;
+    min-width: 80vp;
+}
+
+
+/* Animations */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
